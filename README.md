@@ -3,10 +3,8 @@ php artisan route:clear
 composer dump-autoload
 php artisan route:list
 
-
-Awesome, Tanvir — here’s the **complete, production-style API documentation** for your EPUB Reader backend. It includes: overview, auth, endpoints, request/response schemas, errors, cURL examples, and a full **OpenAPI (Swagger) spec** you can import into Postman/Insomnia/Swagger UI.
-
----
+# Start Laravel bound to all interfaces
+## php artisan serve --host=0.0.0.0 --port=8000
 
 # EPUB Reader API — Complete Documentation
 
