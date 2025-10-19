@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "ac3e58e9-517a-4ded-aecd-d8a687e3a3f5",
+		"name": "api_basic2Adv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34511946",
+		"_collection_link": "https://www.postman.com/cloudy-meteor-569701/workspace/learning-api/collection/34511946-ac3e58e9-517a-4ded-aecd-d8a687e3a3f5?action=share&source=collection_link&creator=34511946"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"abc@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}\r\n\r\n"
+				},
+				"url": {
+					"raw": "{{b_url}}login",
+					"host": [
+						"{{b_url}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reg",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Abcd\",\r\n  \"email\": \"abcd@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{b_url}}register",
+					"host": [
+						"{{b_url}}register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ebooks1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{b_url}}ebooks",
+					"host": [
+						"{{b_url}}ebooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ebook Details2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{b_url}}ebooks/",
+					"host": [
+						"{{b_url}}ebooks"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{b_url}}ebooks/1",
+					"host": [
+						"{{b_url}}ebooks"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
